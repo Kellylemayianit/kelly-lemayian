@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kelly Lemayian — Full-Stack Engineer. React, TypeScript, DevOps and AI integration.">
+<meta name="author" content="Kelly Lemayian">
+<meta property="og:title" content="Kelly Lemayian — Full-Stack Engineer">
+<meta property="og:description" content="I build production-ready web apps end-to-end.">
+<meta property="og:type" content="website">
+<title>Kelly Lemayian — Full-Stack Engineer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: { display: ['PT Sans','sans-serif'], body: ['DM Sans','sans-serif'] },
+      colors: { accent: '#FF6B2B', 'accent-light': '#FF8F5C' }
+    }
+  }
+}
+</script>
+
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/admin.css">
+</head>
+
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
+
+<div id="app-header"></div>
+<main id="app-main"></main>
+<div id="app-footer"></div>
+
+<!-- utilities -->
+<script src="src/utilities/helpers.js"></script>
+<script src="src/utilities/icons.js"></script>
+<script src="src/utilities/auth.js"></script>
+
+<!-- services -->
+<script src="src/services/mockData.js"></script>
+<script src="src/services/api.js"></script>
+<script src="src/services/dataLoader.js"></script>
+
+<!-- components -->
+<script src="src/components/header.js"></script>
+<script src="src/components/footer.js"></script>
+<script src="src/components/serviceCard.js"></script>
+<script src="src/components/projectCard.js"></script>
+<script src="src/components/blogCard.js"></script>
+<script src="src/components/contactChannels.js"></script>
+<script src="src/components/admin/sidebar.js"></script>
+<script src="src/components/admin/shell.js"></script>
+<script src="src/components/admin/statCard.js"></script>
+<script src="src/components/admin/table.js"></script>
+<script src="src/components/admin/projectForm.js"></script>
+<script src="src/components/admin/assetGrid.js"></script>
+<script src="src/components/admin/assetForm.js"></script>
+
+<!-- pages -->
+<script src="src/pages/home.js"></script>
+<script src="src/pages/projects.js"></script>
+<script src="src/pages/project.js"></script>
+<script src="src/pages/blog.js"></script>
+<script src="src/pages/blogArticle.js"></script>
+<script src="src/pages/contact.js"></script>
+<script src="src/pages/notFound.js"></script>
+<script src="src/pages/admin/login.js"></script>
+<script src="src/pages/admin/dashboard.js"></script>
+<script src="src/pages/admin/projects.js"></script>
+<script src="src/pages/admin/assets.js"></script>
+
+<!-- kernel -->
+<script src="src/router.js"></script>
+<script src="src/app.js"></script>
+
+</body>
+</html>
